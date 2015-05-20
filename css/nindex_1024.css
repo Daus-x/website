@@ -6,15 +6,10 @@ input[type=password]:focus, textarea:focus {
 }
 /* CSS Document */
 
+
 @font-face {
-				font-family: 'MyCustomFont1';
-				src: url('lhfoldblockcondmed.eot');
-				font-weight: normal;
-				font-style: normal;
-		}
-@font-face {
-				font-family: 'MyCustomFont1';
-				src: url('lhfoldblockcondmed.ttf');
+				font-family: 'MyFont';
+				src: url('font.ttf');
 				font-weight: normal;
 				font-style: normal;
 		}
@@ -31,7 +26,7 @@ body {
 	width:100%;
 	height:100%;
 	background-color: #000;
-    font-family:  fantasy;
+    font-family:  MyFont;
     font-weight: normal;
     font-style: normal;
 }
@@ -83,7 +78,7 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 }
 #jprePercentage {
 	color: #fff;
-    font-family: fantasy;
+    font-family: MyFont;
 	font-weight: normal;
 	text-align: center;
 	font-size: 50px;
@@ -96,7 +91,7 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 	margin-top: 0px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url(../img/menu.png);
+	background-image: url(../img/MenuPozadina5.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 	width: 100%;
@@ -114,18 +109,18 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 }
 #navigation {
 	position: fixed;
-	float: left;
+	float: center;
 	padding-top: 15px;
 	padding-right: 0px;
 	padding-bottom: 0px;
-	padding-left: 0px;
+	padding-left: 30px;
 	font-size: 20px;
 	list-style-type: none;
 	text-decoration: none;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
-	margin-left: 140px;
+	margin-left: 200px;
 	width: 660px;
 	display: inline;
 }
@@ -136,55 +131,15 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 	display: inline;
 }
 #navigation > a.nav-link.active {
-	color: #ffb400;
+	color: #272727;
 }
 #navigation > a.nav-link:hover {
-	color: #ffb400;
+	color: #272727;
 }
 #navigation > a.nav-link:active {
-	color: #ffb400;
+	color: #272727;
 }
-#BLOGOVIC {
-	position: absolute;
-	right: 84px; 
-	padding-top: 15px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	font-size: 20px;
-}
-.class_mm a:link {
-	font-family: fantasy;
-	font-size: 20px;
-	color: #FFF;
-	text-decoration: none;
-	font-style: normal;
-	font-weight: normal;
-	}
-.class_mm a:visited {
-	font-family: fantasy;
-	font-size: 20px;
-	color: #FFF;
-	text-decoration: none;
-	font-style: normal;
-	font-weight: normal;
-	}
-.class_mm a:active {
-	font-family: fantasy;
-	font-size: 20px;
-	color: #FFF;
-	text-decoration: none;
-	font-style: normal;
-	font-weight: normal;
-	}
-.class_mm a:hover {
-	font-family: fantasy;
-	font-size: 20px;
-	color: #ffb400;
-	text-decoration: none;
-	font-style: normal;
-	font-weight: normal;
-	}
+
 /* ------------------------------------------------------------------------------------------ SLIDE */
 #scrollBar {
 	display: none;
@@ -201,16 +156,17 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 	left:0px;
 	height:37px;
 	width:100%;
-	background-color: rgb(255,0,0);
+	background-color: #000000;
 	/*background: url("../img/img_thumb.jpg");*/
 }
 /* ------------------------------------------------------------------------------------------ SLIDE 1 */
 #slide1 {
 	height: 1000px; 
-	background: url("../img/First_Page.jpg") no-repeat 50% 0px rgb(178, 109, 54); 
+	background: url("../img/MONTAGE2.jpg") no-repeat 50% 0px #98d6ed; 
 	border-top: 1px solid rgba(255,255,255,0.3);
 	border-bottom: 1px solid rgba(0,0,0,0.4);
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	background-size: cover;
 }
 #slide1 > .content {
 	margin-top: 0;
@@ -230,21 +186,19 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 	top: 0px;
 	left: 0px;
 	text-align: center;
-	background-image: url(../img/logo.png);
+	background-image: url(../img/logo/logoHeader.png);
 	background-repeat: no-repeat;
 	background-position: left top;
 }
 #slide1_txt {
 	position: absolute;
-	width: 325px;
+	width: 850px;
 	height: 398px;
-	top: 210px;
-	left: 100px;
+	top: 400px;
+	left: 75px;
 	padding-top: 25px;
 	text-align: center;
-	background-image: url(../img/prvi.png);
-	background-repeat: no-repeat;
-	background-position: left top;
+
 }
 .txt01 {
     font-size: 42px;
@@ -279,28 +233,222 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 /* ------------------------------------------------------------------------------------------ SLIDE 2 */
 #slide2 {
 	height: 1000px; 
-	background: url("../img/SimplusCloud_Stranica.jpg") fixed no-repeat 50% 15% rgb(157, 213, 234);
+	background: url("../img/large/SimplusCloud1500x1000.jpg") fixed no-repeat 50% 15% #3598db;
 	border-top: 1px solid rgba(255,255,255,0.3);
 	border-bottom: 1px solid rgba(0,0,0,0.4);
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 	background-size: contain;
 	}
+#slide2 > .content {
+	margin-top: 0;
+}
+#slide2 .slide2_container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 1000px;
+	text-align: center;
+}
+#slide2_txt {
+	width: 310px;
+	height: 544px;
+	top: 120px;
+	margin-right: 50%;
+	padding-top: 38px;
+	position: absolute;
+	text-align: left;
+	background-image: url(../img/Cloud.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+}
 /* ------------------------------------------------------------------------------------------ SLIDE 3 */
 #slide3 {
 	height: 1000px; 
-	background: url("../img/Simplus_Draw_Slika.jpg") fixed no-repeat 50% 15% rgb(157, 213, 234);
+	background: url("../img/large/SimplusDraw1500x1000.jpg") fixed no-repeat 50% 15% #98d6ed;
 	border-top: 1px solid rgba(255,255,255,0.3); 
 	border-bottom: 1px solid rgba(0,0,0,0.4);
 	background-size: contain;
 	}
+#slide3 > .content {
+	margin-top: 0;
+}
+#slide3 .slide3_container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 1000px;
+	text-align: center;
+}
+#slide3_txt {
+	width: 310px;
+	height: 544px;
+	top: 120px;
+	margin-left: 60%;
+	padding-top: 38px;
+	position: absolute;
+	text-align: left;
+	background-image: url(../img/DRAW.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+}
 /* ------------------------------------------------------------------------------------------ SLIDE 4 */
 #slide4 {
 	height: 1000px; 
-	background: url("../img/SimplusShare_Stranica.jpg") fixed no-repeat 50% 15% rgb(157, 213, 234);
+	background: url("../img/large/SimplusShare1500x1000.jpg") fixed no-repeat 50% 15% #98d6ed;
 	border-top: 1px solid rgba(255,255,255,0.3); 
 	border-bottom: 1px solid rgba(0,0,0,0.4);
 	background-size: contain;
 	}
+#slide4 > .content {
+	margin-top: 0;
+}
+#slide4 .slide4_container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 1000px;
+	text-align: center;
+}
+#slide4_txt {
+	width: 310px;
+	height: 544px;
+	top: 120px;
+	margin-left: 60%;
+	padding-top: 38px;
+	position: absolute;
+	text-align: left;
+	background-image: url(../img/SHARE.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+}
+/* ------------------------------------------------------------------------------------------ SLIDE 4.1 */	
+	#slide41 {
+	height: 1000px; 
+	background: url("../img/large/SimplusTeam1500x1000.jpg") fixed no-repeat 50% 15% #98d6ed;
+	border-top: 1px solid rgba(255,255,255,0.3); 
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	background-size: contain;
+	}
+#slide41 > .content {
+	margin-top: 0;
+}
+#slide41 .slide41_container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 1000px;
+	text-align: center;
+}
+#slide41_txt {
+	width: 310px;
+	height: 544px;
+	top: 160px;
+	margin-left: 60%;
+	padding-top: 38px;
+	position: absolute;
+	text-align: left;
+	background-image: url(../img/TEAM.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+}
+/* ------------------------------------------------------------------------------------------ SLIDE 4.2 */	
+	#slide42 {
+	height: 1000px; 
+	background: url("../img/large/SimplusNetwork1500x1000.jpg") fixed no-repeat 50% 15% #98d6ed;
+	border-top: 1px solid rgba(255,255,255,0.3); 
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	background-size: contain;
+	}
+	#slide42 > .content {
+	margin-top: 0;
+}
+#slide42 .slide42_container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 1000px;
+	text-align: center;
+}
+#slide42_txt {
+	width: 310px;
+	height: 544px;
+	top: 160px;
+	margin-left: 60%;
+	padding-top: 38px;
+	position: absolute;
+	text-align: left;
+	background-image: url(../img/NETWORK.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+}
+/* ------------------------------------------------------------------------------------------ SLIDE 4.3 */	
+	
+	#slide43 {
+	height: 1000px; 
+	background-color: #3598db;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+#slide43 > .content {
+	margin-top: 0;
+}
+#slide43 .slide43_container {
+	width: 100%;
+	height: 700px;
+	padding-top: 28px;
+	position: absolute;
+	text-align: center;
+	/*background-image: url(../img/Refferal.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;*/
+}
+#slide43_txt{
+	position: relative;
+	width: 1000px;
+	height: 700px;
+	top:60px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+/* ------------------------------------------------------------------------------------------ SLIDE 4.4 */	
+#slide44 {
+	height: 1000px; 
+	background-color: #b73831;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+#slide44 > .content {
+	margin-top: 0;
+}
+#slide44 .slide44_container {
+	width: 100%;
+	height: 700px;
+	padding-top: 28px;
+	position: absolute;
+	text-align: center;
+	/*background-image: url(../img/osmi.png);
+	background-repeat: no-repeat;
+	background-position: center top;*/
+}
+#slide44_txt{
+	position: relative;
+	width: 1000px;
+	height: 700px;
+	top:100px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
 /* ------------------------------------------------------------------------------------------ SLIDE 5 */	
 #slide5 {
 	height: 1000px; 
@@ -340,33 +488,34 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 	background-position: left top;
 }
 .txt10 {
-	font-size: 35px;
+	font-size: 34px;
 	color: #FFF;
-	line-height: 35px;
+	line-height: 34px;
 	text-align: center;
 }
 .txt11 {
-    font-size: 36px;
+    font-size: 34px;
 	color: #FFF;
-	line-height: 36px;
+	line-height: 34px;
 	text-align: center;
+	margin-bottom: 30px;
 }
 .txt12 {
-    font-size: 95px;
+    font-size: 31px;
 	color: #FFF;
-	line-height: 95px;
+	line-height: 31px;
 	text-align: center;
 }
 .txt13 {
-    font-size: 26px;
+    font-size: 25px;
 	color: #FFF;
-	line-height: 28px;
+	line-height: 25px;
 	text-align: center;
 }
 .txt14 {
-    font-size: 70px;
+    font-size: 40px;
 	color: #FFF;
-	line-height: 70px;
+	line-height: 40px;
 	text-align: center;
 }
 .txt15 {
@@ -378,7 +527,7 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 /* ------------------------------------------------------------------------------------------ SLIDE 6 */
 #slide6 {
 	height: 1000px; 
-	background: url("../img/Simplus_Network_Stranica.jpg") no-repeat 50% 0px rgb(67, 139, 161);
+	background: url("../img/SimplusNetwork.jpg") no-repeat 50% 0px #98d6ed;
 	border-top: 1px solid rgba(255,255,255,0.3);
 	border-bottom: 1px solid rgba(0,0,0,0.4);
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
@@ -403,9 +552,10 @@ body.freeze { overflow: hidden; padding-right: 17px; }
 	padding-top: 38px;
 	position: absolute;
 	text-align: left;
-	background-image: url(../img/cetvrti.png);
+	background-image: url(../img/NETWORK.png);
 	background-repeat: no-repeat;
 	background-position: left top;
+	background-size: contain;
 }
 .txt16 {
     font-size: 25px;
@@ -1243,7 +1393,7 @@ body.freeze { overflow: hidden; padding-right: 17px; }
   	cursor: pointer;
 }
 .txt31 {
-    font-family:  fantasy;
+    font-family:  MyFont;
     font-size: 20px;
 	text-align: left;
 	color: #000000;
